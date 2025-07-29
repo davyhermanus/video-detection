@@ -4,4 +4,3 @@ numpy>=1.25.2
 Pillow==9.2.0
 matplotlib==3.6.3
 roboflow==1.0.7
-# Tidak dikunci, agar mengikuti versi bawaan Streamlit
