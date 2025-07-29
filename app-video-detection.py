@@ -64,7 +64,7 @@ if uploaded_video is not None:
 
         if frame_count % frame_skip == 0:
             _, img_encoded = cv2.imencode(".jpg", frame)
-            prediction = model.predict(img_encoded.tobytes(), confidence=40, overlap=30).json()
+            prediction = model.predict(frame, confidence=40, overlap=30).json()
             predictions = prediction.get("predictions", [])
             frame = draw_boxes_on_frame(frame, predictions)
 
