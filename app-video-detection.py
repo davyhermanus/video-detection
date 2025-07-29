@@ -71,7 +71,7 @@ if uploaded_video is not None:
             if len(predictions) > 0:
                 anomaly_frames += 1
 
-            stframe.image(frame, channels="BGR", use_column_width=True)
+            stframe.image(frame, channels="BGR", use_container_width=True)
 
         frame_count += 1
         progress.progress(min(100, int(frame_count / cap.get(cv2.CAP_PROP_FRAME_COUNT) * 100)))
