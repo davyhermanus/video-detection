@@ -1,0 +1,10 @@
+import os
+os.makedirs("/mnt/data/.streamlit", exist_ok=True)
+
+with open(readme_path, "w") as f:
+f.write(readme_content)
+
+with open(config_path, "w") as f:
+f.write(config_toml_content)
+
+readme_path, config_path
